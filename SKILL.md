@@ -9,7 +9,13 @@ A skill for writing PRDs, breaking down user stories, and defining metrics — o
 
 ## How to Use This Skill
 
-1. **先問清楚任務類型**，然後載入對應的 reference 文件：
+1. **對話開始時，先檢查 Anchor**：
+
+   搜尋對話中是否存在 Anchor Statement（格式為 `## ✅ Anchor vN`）。
+   - **有 Anchor** → 讀取版本號最高的那個，帶入後續所有任務
+   - **沒有 Anchor** → 正常從問診開始，第一個階段完成後初始化 Anchor v1
+
+2. **問清楚任務類型**，然後載入對應的 reference 文件：
 
 | 任務 | 載入的文件 |
 |------|-----------|
@@ -21,6 +27,7 @@ A skill for writing PRDs, breaking down user stories, and defining metrics — o
 | 不確定 / 全面規劃 | 載入全部五個 |
 | build_report | `references/build-report.md` |
 | 每次輸出章節內容後 | `references/status-snapshot.md` |
+| 每個階段完成後 | 輸出更新的 Anchor（見 `references/anchor.md`） |
 
 2. **詢問系統架構 context**（見下方 Context Gathering）
 
@@ -71,6 +78,7 @@ A skill for writing PRDs, breaking down user stories, and defining metrics — o
 - `references/competitive-analysis.md` — 競品分析框架、功能矩陣、差異化洞察
 - `references/roadmap-guide.md` — Now/Next/Later 框架、Impact vs Effort 矩陣
 - `references/build-report.md` — 受眾校準、品質評分、三種格式輸出、HTML 填充規則
+- `references/anchor.md` — Anchor 機制：跨階段共享 context、版本號規則、各欄位對應的問診跳過邏輯
 - `references/status-snapshot.md` — 狀態快照格式與品質門檻對照表
 - `assets/prd-blank.md` — 空白 PRD 模板
 - `assets/report-template.md` — Markdown 報告模板
