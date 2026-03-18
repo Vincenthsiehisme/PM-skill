@@ -57,6 +57,20 @@ A skill for writing PRDs, breaking down user stories, and defining metrics — o
 - **長度**：PRD 完整展開；User Story 一個功能對應 3–5 則；Metrics 明確列出分子分母
 - **不要捏造**：架構細節不確定時，用 `[待確認]` 標記，不要假設
 
+### 輸出後停等原則（Stop-and-Align）
+
+**每次輸出章節、Story 或 Metric 後，必須：**
+1. 輸出狀態快照（見 `references/status-snapshot.md`）
+2. 等待 PM 回應 A / B / C
+3. 根據回應決定下一步
+
+**絕對不做的事：**
+- 輸出快照後自動繼續問診
+- 發現缺口後自動追問，沒有等 PM 決定
+- 把「有缺口」當作必須立刻填補的訊號
+
+**PM 的回應決定節奏，不是 Claude 的判斷。**
+
 ---
 
 ## Gotchas
