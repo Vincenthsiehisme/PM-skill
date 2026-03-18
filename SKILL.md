@@ -16,8 +16,11 @@ A skill for writing PRDs, breaking down user stories, and defining metrics — o
 | 寫 PRD | `references/prd-template.md` |
 | 拆 User Story / Ticket | `references/user-story-guide.md` |
 | 定義 Metrics / KPI | `references/metrics-guide.md` |
-| 不確定 / 全面規劃 | 載入全部三個 |
+| 競品分析 | `references/competitive-analysis.md` |
+| Roadmap 規劃 | `references/roadmap-guide.md` |
+| 不確定 / 全面規劃 | 載入全部五個 |
 | build_report | `references/build-report.md` |
+| 每次輸出章節內容後 | `references/status-snapshot.md` |
 
 2. **詢問系統架構 context**（見下方 Context Gathering）
 
@@ -36,36 +39,6 @@ A skill for writing PRDs, breaking down user stories, and defining metrics — o
 > 「這個功能主要解決什麼問題？目標使用者是誰？」
 
 拿到答案後直接進入 prd-template 的問診流程，不要再問第二輪。
-
----
-
-## 狀態快照（Status Snapshot）
-
-**每次輸出任何章節或任務內容後，自動在回應末尾附上目前狀態。**
-不宣告「完成」，不給導覽選單。只提供透明度，讓 PM 自己判斷要繼續哪個部分。
-
-格式：
-```
-─────────────────────────────
-📋 目前狀態
-背景      ✅  /  目標      ⚠️  /  使用者    ✅
-功能需求  ❌  /  技術考量  ─   /  開放問題  ⚠️
-
-⚠️ 需要注意：[最關鍵的 1 個缺口，一句話說明]
-─────────────────────────────
-```
-
-符號定義：
-- ✅ 達到品質門檻
-- ⚠️ 有內容但未達門檻（空洞或缺要素）
-- ❌ 空白或缺失
-- ─  本次未涉及（不評分）
-
-**規則：**
-- 只顯示本次對話中已討論過的章節，沒有討論過的用 `─`
-- 「需要注意」只挑最影響後續進展的一個缺口，不列清單
-- 不說「接下來建議你做 X」，讓 PM 自己決定節奏
-- 若 PM 說「不用顯示狀態」或「繼續就好」，停止附加快照
 
 ---
 
@@ -91,13 +64,16 @@ A skill for writing PRDs, breaking down user stories, and defining metrics — o
 ## Reference Files
 
 按需載入：
-- `references/prd-template.md` — 完整 PRD 模板與各章節說明
-- `references/user-story-guide.md` — User Story 格式、拆解方法、Acceptance Criteria 範例
-- `references/metrics-guide.md` — Metrics 框架（北極星指標、guardrail、leading/lagging）
-- `references/build-report.md` — build_report 流程：資料抽取、完成度計算、三種格式輸出
-- `assets/prd-blank.md` — 空白 PRD 模板，可直接複製使用
+- `references/prd-template.md` — PRD 問診流程 + 各章節完成門檻
+- `references/user-story-guide.md` — User Story 格式、拆解方法、覆蓋度檢查
+- `references/metrics-guide.md` — 四層指標框架、量測定義、baseline 建立
+- `references/competitive-analysis.md` — 競品分析框架、功能矩陣、差異化洞察
+- `references/roadmap-guide.md` — Now/Next/Later 框架、Impact vs Effort 矩陣
+- `references/build-report.md` — 受眾校準、品質評分、三種格式輸出、HTML 填充規則
+- `references/status-snapshot.md` — 狀態快照格式與品質門檻對照表
+- `assets/prd-blank.md` — 空白 PRD 模板
 - `assets/report-template.md` — Markdown 報告模板
-- `assets/report-template.html` — HTML 報告模板（含側邊導覽、進度條、highlight）
+- `assets/report-template.html` — HTML 報告模板（側邊導覽、進度條、highlight）
 
 ---
 
