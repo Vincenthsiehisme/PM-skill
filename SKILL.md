@@ -28,10 +28,11 @@ A skill for writing PRDs, breaking down user stories, and defining metrics — o
 | build_report | `references/build-report.md` |
 | 每次輸出章節內容後 | `references/status-snapshot.md` |
 | 每個階段完成後 | 輸出更新的 Anchor（見 `references/anchor.md`） |
+| 首次對話、無 Anchor 時 | `references/anchor.md`（了解初始化與版本規則） |
 
-2. **詢問系統架構 context**（見下方 Context Gathering）
+3. **詢問系統架構 context**（見下方 Context Gathering，若使用者未提供）
 
-3. 輸出對應格式的文件
+4. 輸出對應格式的文件
 
 ---
 
@@ -97,6 +98,7 @@ PRD 需要更新時，使用者會說「更新 PRD」「這個要改」「工程
 3. **標記變更**：在被修改的章節開頭加上 `> 📝 v0.2 更新：[一句話說明改了什麼]`
 4. **保留歷史**：不要直接覆蓋舊內容，改為用刪除線標記：`~~舊內容~~`，新內容寫在下方
 5. **開放問題同步**：若變更是因為某個開放問題有了答案，把該問題標記為 `✅ 已解決` 並說明結論
+6. **更新 Anchor**：輸出新版 Anchor，在改動記錄加入「v[N]：[改動摘要，說明影響哪些欄位]」，受影響的欄位加上 `←更新` 標記
 
 **版本狀態定義：**
 - `草稿`：初版，尚未送審
