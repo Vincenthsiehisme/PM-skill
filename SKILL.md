@@ -15,7 +15,7 @@ A skill for writing PRDs, breaking down user stories, and defining metrics — o
 |------|-----------|
 | 寫 PRD | `references/prd-template.md` |
 | 拆 User Story / Ticket | `references/user-story-guide.md` |
-| 定義 Metrics / KPI | `references/metrics-guide.md` |
+| 定義 Metrics / KPI | 先載入 `references/metrics-hypothesis.md`，問診完成後載入 `references/metrics-guide.md` |
 | 競品分析 | `references/competitive-analysis.md` |
 | Roadmap 規劃 | `references/roadmap-guide.md` |
 | 不確定 / 全面規劃 | 載入全部五個 |
@@ -66,7 +66,8 @@ A skill for writing PRDs, breaking down user stories, and defining metrics — o
 按需載入：
 - `references/prd-template.md` — PRD 問診流程 + 各章節完成門檻
 - `references/user-story-guide.md` — User Story 格式、拆解方法、覆蓋度檢查
-- `references/metrics-guide.md` — 四層指標框架、量測定義、baseline 建立
+- `references/metrics-hypothesis.md` — 指標假設聲明：OKR 連結、假設透明、護欄選擇邏輯（定義指標前先跑）
+- `references/metrics-guide.md` — 四層指標框架、量測定義、baseline 建立（假設聲明完成後使用）
 - `references/competitive-analysis.md` — 競品分析框架、功能矩陣、差異化洞察
 - `references/roadmap-guide.md` — Now/Next/Later 框架、Impact vs Effort 矩陣
 - `references/build-report.md` — 受眾校準、品質評分、三種格式輸出、HTML 填充規則
