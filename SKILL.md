@@ -1,6 +1,6 @@
 ---
 name: prd-writer
-description: Use for structured product planning output: PRD drafting, user story breakdown, KPI/metrics definition, competitive analysis, or roadmap planning. Trigger on: "寫PRD", "需求文件", "拆user story", "定義KPI", "定義指標", "競品分析", "roadmap", "產品規劃", "feature spec", "寫需求". DO NOT trigger for: general product chat, technical architecture discussion, code review, or one-line questions about product concepts. Trigger only when the user needs a structured document or framework as output.
+description: 'Use for structured product planning output: PRD drafting, user story breakdown, KPI/metrics definition, competitive analysis, or roadmap planning. Trigger on: 寫PRD, 需求文件, 拆user story, 定義KPI, 定義指標, 競品分析, roadmap, 產品規劃, feature spec, 寫需求. DO NOT trigger for: general product chat, technical architecture discussion, code review, or one-line questions about product concepts. Trigger only when the user needs a structured document or framework as output.'
 ---
 
 # PRD Writer
