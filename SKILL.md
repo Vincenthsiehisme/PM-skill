@@ -40,7 +40,8 @@ description: |
 |-----------|----------------|
 | 「有訊號但不知道問題是什麼」 | `references/problem-definition.md` |
 | 「知道問題但不確定值不值得解」 | `references/opportunity-sizing.md` |
-| 「老闆指派方向，想確認框架」 | 先 `problem-definition.md`，完成後 `opportunity-sizing.md` |
+| 「我要做 X 功能」「老闆說要做 Y」（帶著解法進來） | `references/solution-first.md` |
+| 「老闆指派方向，想確認框架」 | `references/solution-first.md` |
 | 「完全不確定，從頭開始」 | 先 `problem-definition.md`，完成後 `opportunity-sizing.md` |
 
 ### 模糊探索的輸出
@@ -138,6 +139,7 @@ Opportunity Brief 完成後，詢問 PM：
 **模糊探索（Fuzzy Front End）**
 - `references/problem-definition.md` — 訊號收集 → 根本原因分析 → HMW 收斂
 - `references/opportunity-sizing.md` — 機會評估框架（真實性 / 影響範圍 / 策略連結）
+- `references/solution-first.md` — 解法假設拆解 → 還原問題陳述 → 判斷是否需重新定義
 - `references/opportunity-brief.md` — Opportunity Brief 模板、完成門檻、銜接 prd-writer 邏輯
 
 **PRD 撰寫**
