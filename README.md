@@ -7,6 +7,7 @@ A Claude Code skill for the full product planning lifecycle — from fuzzy oppor
 Install this skill and Claude will:
 
 * **探索機會**：還不確定問題值不值得解時，引導你從訊號整理 → 根本原因分析 → HMW 問題定義，輸出 Opportunity Brief
+* **解法往回拆**：帶著解法假設進來（「老闆說要做 X」「我想做 Y 功能」）時，拆解解法背後的問題假設，確認問題定義正確再往前走
 * **評估機會**：用結構化框架評估問題的真實性、影響範圍、策略連結，幫你決定值不值得投資
 * **寫 PRD**：問診式引導，逐章確認背景、目標、使用者、功能需求，自動標記不完整的章節
 * **拆 User Story**：強制每則 Story 有 who/what/why + Acceptance Criteria，不完整就停下來提示
@@ -37,6 +38,8 @@ cp -r prd-writer /your-project/.claude/skills/
 用戶一直反映 X，但我不知道根本原因
 幫我探索這個機會
 幫我定義問題 / HMW
+老闆說要做 X，但我想確認問題定義
+我想做 Y 功能，幫我確認方向對不對
 
 # 規劃輸出階段（已確定要做什麼）
 寫PRD：幫我寫一個會員登入功能的 PRD
@@ -52,6 +55,7 @@ Roadmap：幫我排這季的產品規劃
 **會觸發：**
 
 * 探索機會 / 問題定義 / HMW / 這個值不值得做
+* 老闆說要做 X / 我想做 Y 功能，確認方向
 * 寫PRD / 需求文件 / feature spec / 寫需求
 * 拆user story / 定義KPI / 定義指標
 * 競品分析 / roadmap / 產品規劃
@@ -87,6 +91,7 @@ prd-writer/
 ├── references/
 │   ├── problem-definition.md         # 訊號收集 → 根本原因分析 → HMW 收斂
 │   ├── opportunity-sizing.md         # 機會評估框架（真實性/影響範圍/策略連結）
+│   ├── solution-first.md             # 解法假設拆解 → 還原問題陳述 → 判斷路徑
 │   ├── opportunity-brief.md          # Opportunity Brief 模板與銜接邏輯
 │   ├── prd-template.md               # PRD 問診流程 + 各章節完成門檻
 │   ├── user-story-guide.md           # User Story 格式、拆解方法、完成標準
@@ -127,3 +132,4 @@ prd-writer/
 * v0.3：各 reference 加入完成標準；build\_report 改為品質評分算法
 * v0.4：新增競品分析、Roadmap 指南；HTML 填充邏輯補完
 * v0.5：新增模糊探索前置階段（problem-definition / opportunity-sizing / opportunity-brief）；SKILL.md 加入階段判斷層
+* v0.6：新增 solution-first.md，補足「帶著解法假設進來」的入口路徑
